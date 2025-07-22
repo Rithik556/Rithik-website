@@ -1,0 +1,43 @@
+/* Container styling */
+.resume-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.resume-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive image */
+.resume-image {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 600px) {
+  .resume-container {
+    padding: 10px;
+  }
+
+  .resume-image {
+    max-height: none;
+  }
+
+  .resume-container button {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+}
