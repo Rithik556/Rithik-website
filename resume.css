@@ -1,3 +1,39 @@
+.section-heading {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.4); /* or #000 for solid black */
+    border-radius: 10px;
+}
+
+.section-heading {
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 11% ;
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.4); /* or #000 for solid black */
+    border-radius: 10px;
+
+    /* Zoom effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1);
+}
+
+.section-heading:hover {
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Optional shadow */
+}
+
 /* Container styling */
 .resume-container {
   width: 100%;
@@ -17,12 +53,12 @@
 
 /* Responsive image */
 .resume-image {
-  width: 100%;
+  /* width: 100%;
   height: auto;
-  max-height: 90vh;
+  max-height: 90vh; */
   object-fit: contain;
   border-radius: 10px;
-  display: block;
+  display: flex;
   margin: 0 auto;
 }
 
