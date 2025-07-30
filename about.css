@@ -3,6 +3,8 @@
 
 
 .about h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
     font-size: 40px;
     font-weight: bold;
     color: white;
@@ -182,19 +184,20 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    gap: 20px;
+    /* flex-direction: row; */
+    gap: 90px;
     margin-top: 20px;
 }
 
 .guarantee .item {
     background-color: transparent;
     color: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    width: 250px; /* Adjust to fit your layout */
+    width: 300px;
+    gap: none;
 }
 
 .guarantee .item:hover {
@@ -208,7 +211,7 @@
 
 .guarantee .info h3 {
     margin: 0;
-    font-size: 18px;
+    display: inline;
 }
 
 .hover-underline span {
