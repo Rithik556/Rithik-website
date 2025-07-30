@@ -59,13 +59,13 @@ ul.nav-links {
 
 .nav-link {
     position: relative;
-    display: inline-block;
+    display: block;
     margin-left: 30px;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;
     padding: 10px 16px;
     border-radius: 8px;
-    background-color: rgba(129, 124, 124, 0.5);
+    background-color: rgba(100, 98, 98, 0.5);
     transition: transform 0.3s ease;
 }
 
