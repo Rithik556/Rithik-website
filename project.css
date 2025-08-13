@@ -34,10 +34,10 @@ body {
 
 /* Card container */
 .card-container {
-  display: flex;
+  display: inline;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   padding: 50px;
 }
 
