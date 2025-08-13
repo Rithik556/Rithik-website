@@ -36,10 +36,8 @@
 
 /* Container styling */
 .resume-container {
-  display: flex;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
+  display: inline-block;
+  margin-left: 20%;
   padding: 90px;
   text-align: center;
   background: rgba(255, 255, 255, 0.05);
@@ -54,8 +52,8 @@
 
 /* Responsive image */
 .resume-image {
+  position: relative;
   display: inline;
-  width: 100%;
   height: auto;
   max-height: 90vh;
   object-fit: contain;
