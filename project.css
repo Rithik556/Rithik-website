@@ -16,7 +16,7 @@ body {
 /* Section heading */
 .section-heading {
   font-size: 40px;
-  display: inline;
+  display: inline-block;
   font-weight: bold;
   color: white;
   text-align: center;
@@ -57,8 +57,8 @@ body {
 
 .card img {
   height: 300px;
-  width: 400px;
-  object-fit:fill;
+  width: 100%;
+  object-fit: cover;
   padding: 20px;
   border-radius: 40px;
 }
@@ -115,4 +115,78 @@ body {
 
 .social-links a:hover {
   text-decoration: underline;
+}
+
+/* =====================
+   Responsive Design
+   ===================== */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .section-heading {
+    font-size: 32px;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .card img {
+    height: 220px;
+  }
+}
+
+/* Phones */
+@media screen and (max-width: 768px) {
+  .section-heading {
+    font-size: 26px;
+    padding: 8px 12px;
+  }
+
+  .card-container {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .card img {
+    height: auto;
+    padding: 10px;
+  }
+
+  .card-content h3 {
+    font-size: 16px;
+  }
+
+  .card-content p {
+    font-size: 13px;
+  }
+}
+
+/* Small Phones */
+@media screen and (max-width: 480px) {
+  .section-heading {
+    font-size: 22px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .card-container {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
