@@ -1,37 +1,24 @@
 .section-heading {
-    margin-top: 40px;
-    margin-bottom: 30px;
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-    line-height: 1.2;
-    text-align: center;
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: rgba(0, 0, 0, 0.4); /* or #000 for solid black */
-    border-radius: 10px;
-}
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  line-height: 1.2;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.4); /* or #000 for solid black */
+  border-radius: 10px;
 
-.section-heading {
-    font-size: 40px;
-    font-weight: bold;
-    margin-left: 11% ;
-    color: white;
-    line-height: 1.2;
-    text-align: center;
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: rgba(0, 0, 0, 0.4); /* or #000 for solid black */
-    border-radius: 10px;
-
-    /* Zoom effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1);
+  /* Zoom effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1);
 }
 
 .section-heading:hover {
-    transform: scale(1.05); /* Slight zoom */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Optional shadow */
+  transform: scale(1.05); /* Slight zoom */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Optional shadow */
 }
 
 /* Container styling */
@@ -52,25 +39,40 @@
 /* Responsive image */
 .resume-image {
   position: relative;
-  display: flex;
   object-fit: contain;
   border-radius: 10px;
   display: flex;
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Responsive tweaks */
-@media screen and (max-width: 600px) {
-  .resume-container {
-    padding: 10px;
+@media screen and (max-width: 768px) {
+  .section-heading {
+    font-size: 28px;
+    margin-left: 0;
+    padding: 8px 12px;
   }
 
-  .resume-image {
-    max-height: none;
+  .resume-container {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-heading {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .resume-container {
+    padding: 15px;
   }
 
   .resume-container button {
     width: 100%;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 }
