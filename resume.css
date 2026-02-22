@@ -1,78 +1,159 @@
-.section-heading {
-  margin-top: 40px;
-  margin-bottom: 30px;
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
-  line-height: 1.2;
-  text-align: center;
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: rgba(0, 0, 0, 0.4); /* or #000 for solid black */
-  border-radius: 10px;
+/* ============================= */
+/*        RESUME SECTION         */
+/* ============================= */
 
-  /* Zoom effect */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1);
-}
-
-.section-heading:hover {
-  transform: scale(1.05); /* Slight zoom */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Optional shadow */
-}
-
-/* Container styling */
 .resume-container {
-  display: inline-block;
-  padding: 90px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.resume-container a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Responsive image */
-.resume-image {
-  position: relative;
-  object-fit: contain;
-  border-radius: 10px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Glass Container */
+.glass-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  overflow: hidden; /* Prevents image overflow */
+  box-sizing: border-box;
+}
+
+/* Image Wrapper */
+.image {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Resume Image - Perfect Fit */
+.resume-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Prevent Any Image Overflow Globally */
+img {
   max-width: 100%;
   height: auto;
 }
 
-/* Responsive tweaks */
+/* ============================= */
+/*           BUTTONS             */
+/* ============================= */
+
+button {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 15px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================= */
+/*        SECTION TITLE          */
+/* ============================= */
+
+.glass-container h2 {
+  font-size: 40px;
+  margin: 40px 0 30px 0;
+  font-weight: bold;
+  color: white;
+  line-height: 1.2;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-container h2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================= */
+/*            FOOTER             */
+/* ============================= */
+
+.footer {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.footer .social-links {
+  margin-top: 10px;
+}
+
+.footer .social-links a {
+  color: #66aaff;
+  margin: 0 10px;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.footer .social-links a:hover {
+  color: white;
+}
+
+/* ============================= */
+/*        RESPONSIVE DESIGN      */
+/* ============================= */
+
 @media screen and (max-width: 768px) {
-  .section-heading {
-    font-size: 28px;
-    margin-left: 0;
-    padding: 8px 12px;
+  .resume-container {
+    padding: 20px 15px;
   }
 
-  .resume-container {
-    padding: 30px;
+  .glass-container {
+    padding: 20px;
+  }
+
+  button {
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .section-heading {
-    font-size: 22px;
-    margin-top: 20px;
-    margin-bottom: 15px;
+  .glass-container h2 {
+    font-size: 26px;
+    padding: 8px 12px;
   }
 
-  .resume-container {
-    padding: 15px;
-  }
-
-  .resume-container button {
-    width: 100%;
-    font-size: 0.9rem;
+  button {
+    font-size: 14px;
+    padding: 10px 18px;
   }
 }
